@@ -5,7 +5,7 @@
 - [팀원](#-팀원)
 - [타임라인](#-타임라인)
 - [시각화 구조](#-시각화-구조)
-- [실행 화면](#-실행-화면)
+- [실행화면](#-실행화면)
 - [트러블 슈팅](#-트러블-슈팅)
 - [참고 링크](#-참고-링크)
 
@@ -38,7 +38,7 @@
 ### 2. Class Diagram
 <img width="716" alt="스크린샷 2023-09-27 오후 2 05 08" src="https://github.com/jyubong/ios-juice-maker/assets/126065608/7f8ddec0-00fb-403c-b56d-a17d1d3c6ae4">
 
-## 🖥️ 실행 화면
+## 💻 실행화면
 |재고 수정 버튼 클릭|주문 성공|
 |---|---|
 |![재고수정 버튼](https://github.com/jyubong/ios-juice-maker/assets/126065608/875ea584-5470-4148-b12e-ae84ed9d429f)|![주문 성공](https://github.com/jyubong/ios-juice-maker/assets/126065608/49901382-8994-4907-8bc1-3d7723d8402a)|
