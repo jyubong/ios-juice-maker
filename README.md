@@ -198,3 +198,26 @@ private func pushToStockViewController() {
 [애플 공식문서 UIViewController](https://developer.apple.com/documentation/uikit/uiviewcontroller)   
 [애플 공식문서 forEach(_:)](https://developer.apple.com/documentation/swift/array/foreach(_:))   
 [애플 공식문서 Protocol](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/)
+
+
+---
+### 팀 회고
+<details>
+<summary>우리팀이 잘한 점</summary>
+    
+- 핵심경험, 요구사항 반영 노력함
+- 피드백받은 사항에 대해 공부하고 적절히 개선함
+</details>
+
+<details>
+<summary>우리팀이 개선할 점</summary>
+
+- 배려가 있는 모습은 좋으나 자기 주장과 자신감이 다소 부족함
+</details>
+
+<details>
+<summary>서로에게 피드백</summary>
+
+- Kiseok: 구현 능력이 너무 뛰어나셔서 혼자 해결하지 못하는 부분들을 어려움없이 해결해 주시고 잘 알려주셨습니다.
+- 쥬봉이 : 제가 생각하지 못한 부분을 Kiseok이 많이 알고 있어 도움이 많이되고 배울 수 있었습니다. 덕분에 큰 트러블없이 프로젝트를 진행할 수 있었습니다.
+</details>
