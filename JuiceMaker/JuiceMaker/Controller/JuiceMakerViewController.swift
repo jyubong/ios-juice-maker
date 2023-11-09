@@ -13,6 +13,8 @@ final class JuiceMakerViewController: UIViewController {
             labelCollection.sort { $0.tag < $1.tag }
         }
     }
+
+    @IBOutlet var orderButtons: [UIButton]!
     
     private let juiceMaker: JuiceMaker = JuiceMaker()
     private let fruitStore: FruitStore = FruitStore.shared
@@ -35,6 +37,15 @@ final class JuiceMakerViewController: UIViewController {
         Fruit.allCases.enumerated().forEach { (index, fruit) in
             labelCollection[index].text = String(fruitStore.fruits[fruit] ?? .zero)
         }
+        
+        orderButtons.forEach {
+            $0.titleLabel?.adjustsFontForContentSizeCategory = true
+            $0.titleLabel?.adjustsFontSizeToFitWidth = true
+        }
+        
+        setAccessibilityLabel()
+    }
+    
     private func setAccessibilityLabel() {
         labelCollection.forEach {
             let fruit = Fruit.allCases[$0.tag].rawValue
