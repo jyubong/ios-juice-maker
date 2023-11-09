@@ -14,7 +14,11 @@ final class JuiceMakerViewController: UIViewController {
         }
     }
 
-    @IBOutlet var orderButtons: [UIButton]!
+    @IBOutlet var orderButtons: [UIButton]! {
+        didSet {
+            orderButtons.sort { $0.tag < $1.tag }
+        }
+    }
     
     private let juiceMaker: JuiceMaker = JuiceMaker()
     private let fruitStore: FruitStore = FruitStore.shared
@@ -58,33 +62,12 @@ final class JuiceMakerViewController: UIViewController {
     }
     
     @IBAction func juiceOrderButtonTapped(_ sender: UIButton) {
-        var menu: JuiceMenu?
-        
-        switch sender.tag {
-        case 0:
-            menu = .strawberryBananaJuice
-        case 1:
-            menu = .strawberryJuice
-        case 2:
-            menu = .bananaJuice
-        case 3:
-            menu = .pineappleJuice
-        case 4:
-            menu = .mangoKiwiJuice
-        case 5:
-            menu = .kiwiJuice
-        case 6:
-            menu = .mangoJuice
-        default:
-            break
-        }
+        let menu = JuiceMenu.allCases[sender.tag]
         
         makeJuice(of: menu)
     }
     
-    private func makeJuice(of menu: JuiceMenu?) {
-        guard let menu = menu else { return }
-        
+    private func makeJuice(of menu: JuiceMenu) {
         do {
             try juiceMaker.makeJuice(menu: menu)
             setupUI()
