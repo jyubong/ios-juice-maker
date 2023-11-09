@@ -35,6 +35,11 @@ final class JuiceMakerViewController: UIViewController {
         Fruit.allCases.enumerated().forEach { (index, fruit) in
             labelCollection[index].text = String(fruitStore.fruits[fruit] ?? .zero)
         }
+    private func setAccessibilityLabel() {
+        labelCollection.forEach {
+            let fruit = Fruit.allCases[$0.tag].rawValue
+            $0.accessibilityLabel = "\(fruit) 재고 \($0.text!)개"
+        }
     }
     
     @IBAction func stockChangeButtonTapped(_ sender: Any) {
