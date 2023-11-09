@@ -1,4 +1,7 @@
 # 🥤 쥬스 메이커
+다양한 쥬스를 만들고 재고를 관리하는 어플
+
+### 🛠️ 쥬봉이 혼자 추가로 refactor 하는 중입니다 🛠️
 
 ---
 ## 🔎 목차
@@ -17,6 +20,7 @@
 |[GitHub](https://github.com/carti1108)|[GitHub](https://github.com/jyubong)|
 
 ## 📅 타임라인
+### 👥 팀프로젝트
 |날짜|내용|
 |------|---|
 |23.09.11|- 공식문서 공부<br> - 그라운드 룰 정하기|
@@ -30,6 +34,11 @@
 |23.09.25|- 코드 리팩터링|
 |23.09.26|- delegate pattern 구현|
 |23.09.27|- UML 시각화 구조 작성<br> - ReadMe 최종 작성|
+
+### 👤 개별 프로젝트
+|날짜|내용|
+|------|---|
+|23.11.09|- dynamic type 적용 <br> - accessibilityLabel 수정|
 
 ## 👀 시각화 구조
 ### 1. Sequence Diagram
@@ -197,8 +206,8 @@ private func pushToStockViewController() {
 [애플 공식문서 CustomStringConvertible](https://developer.apple.com/documentation/swift/customstringconvertible)   
 [애플 공식문서 UIViewController](https://developer.apple.com/documentation/uikit/uiviewcontroller)   
 [애플 공식문서 forEach(_:)](https://developer.apple.com/documentation/swift/array/foreach(_:))   
-[애플 공식문서 Protocol](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/)
-
+[애플 공식문서 Protocol](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/)   
+[애플 공식문서 UIAccessibility](https://developer.apple.com/documentation/objectivec/nsobject/uiaccessibility)
 
 ---
 ### 팀 회고
