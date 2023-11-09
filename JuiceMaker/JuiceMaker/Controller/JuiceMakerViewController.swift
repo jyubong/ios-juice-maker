@@ -82,7 +82,9 @@ final class JuiceMakerViewController: UIViewController {
     private func alertJuiceMakeSucess(of menu: JuiceMenu) {
         let message: String = menu.rawValue + Message.success
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        let check = UIAlertAction(title: Message.check, style: .default)
+        let check = UIAlertAction(title: Message.check, style: .default) { _ in
+            UIAccessibility.post(notification: .screenChanged, argument: "과일 소모했어요.")
+        }
         
         alert.addAction(check)
         self.present(alert, animated: true)
@@ -113,7 +115,9 @@ final class JuiceMakerViewController: UIViewController {
         }
         
         stockChangeViewController.delegate = self
-        self.present(stockNavigationController, animated: true)
+        self.present(stockNavigationController, animated: true) {
+            UIAccessibility.post(notification: .screenChanged, argument: "화면이 바뀌었어요.")
+        }
     }
 }
 
