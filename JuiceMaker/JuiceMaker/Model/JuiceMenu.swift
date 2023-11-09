@@ -5,7 +5,7 @@
 //  Created by Kiseok, 쥬봉이 on 2023/09/14.
 //
 
-enum JuiceMenu: String {
+enum JuiceMenu: String, CaseIterable {
     case strawberryJuice = "딸기 쥬스"
     case bananaJuice = "바나나 쥬스"
     case pineappleJuice = "파인애플 쥬스"
